@@ -4,3 +4,30 @@ for x in range(15):
     if (f1 + f2 ) % 14 == 0:
         print((f1 + f2) // 14)
         
+ for p in range(1, 100):
+    for x in range(p):
+        for y in range(p):
+            f1 = 1 * p**3 + x * p** 2 + 7 * p ** 1 + 7
+            f2 = x * p**3 + x * p** 2 + 7 * p ** 1 + 7
+            f = y * p ** 3 + y * p ** 1 + 0* p ** 2 + y * p ** 0
+            if f1 + f2 == f:
+                a = y * p ** 3 + x * p ** 2 + y * p ** 1 + x
+                print(a)
+                
+for x in range(44):
+    f1 = 1 * 44**3 + x * 44**2 + 2 * 44 + 3
+    f2 = 3 * 44 ** 3 + 2 * 44** 2 + x * 44 + 1
+    if (f1+ f2) % 42 == 0:
+        print((f1+f2) // 42)
+
+alph = "0123456789abcde"
+for x in alph:
+    f1 = "82" + x + "19"
+    f2 = "6" + x + "073"
+    d = int(f1, 15) - int(f2, 15)
+    if d % 11 == 0:
+        print(d // 11)
+       
+for x in range(5, 37):
+    if int("224", x) + 1 == int("101", 8):
+        print(x)
